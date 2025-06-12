@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라벨의 방</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
+    <script src="index.js"></script>
+</head>
+
+<body>
+<!-- 인트로 -->
+<div id="intro">
+    <div style="font-family: 'Courier New', Courier, monospace;">Click the door to entrance</div>
+    <div class="door-container">
+        <img src="./문.svg" class="door" onclick="navigateTo('home')">
+    </div>
+</div>
+
+<!-- 진짜 홈페이지 -->
+<div id="home" style="display: none;">
+    <!-- 네비게이션 -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="navigateTo('timeline')">타임라인</a></li>
+            <li><a href="#" onclick="navigateTo('record')">레코드샵</a></li>
+            <li><a href="#" onclick="navigateTo('game')">볼레로 게임</a></li>
+            <li><a href="#" onclick="navigateTo('play')">라벨 아카이빙</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- 홈 갤러리 -->
+
+    <img src="./프레임 1.svg"
+    style="position:absolute; left:450px; top: 300px;z-index: 30;width: 330px;height: 330px;">
+    <img src="./야옹 듀엣_앨범 커버.jpeg" class="frame"
+    style="position:absolute; left:480px; top:360px ;z-index: 0;width: 275px;">
+
+    <img src="./라벨_정면001.jpg" class="frame"
+    style="position:absolute; left:880px; top:370px ;z-index: 0;width: 285px;">
+    <img src="./프레임 3.svg"
+    style="position:absolute; left:830px; top: 330px;z-index: 30;width: 380px;">
+
+    <img src="./라벨_피아노.jpeg" class="frame"
+    style="position:absolute; left:755px; top:860px ;z-index: 0;width: 635px;">
+    <img src="./프레임 6.svg"
+    style="position:absolute; left:710px; top: 850px;z-index: 30;width: 680px;">
+
+    <img src="./볼레로_라무루 오케스트라_라벨 지휘_1930년 12인치 디스크.jpg" class="frame"
+    style="position:absolute; left:303px; top:675px ;z-index: 0;width: 335px;">
+    <img src="./프레임 5.svg"
+    style="position:absolute; left:270px; top: 650px;z-index: 30;width: 400px;">
+
+    <img src="./la valse_cover.png" class="frame"
+    style="position:absolute; left:1310px; top: 400px;z-index: 0;width: 280px;">
+    <img src="./프레임 7.svg"
+    style="position:absolute; left:1260px; top: 360px;z-index: 30;width: 380px;">
+
+</div>
+<!--홈페이지 끝-->
+
+<div id="timeline" style="display: none;">
+    <div class="timeline-container">
+        <div class="timeline-title">Timeline</div>
+        <div class="timeline-line"></div>
+        <!-- 각 타임라인 아이템 -->
+        <div class="timeline-item left">
+            <div class="year">
+                <h2>1899</h2>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="content">
+                <h2>Pavane pour une infante défunte</h2>
+                <div class="hover-container">
+                    죽은 왕녀를 위한 파반느
+                    <div class="hidden-text">
+                        '옛 스페인의 궁전에서 작은 왕녀가 춤을 췄을것 같은 파반느에 대한 기억'
+                        <br> 작곡가 라벨을 본격적으로 세상에 알리기 시작하게 된 곡이다.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="year">
+                <h2>1920</h2>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="content">
+                <h2>La valse</h2>
+                <div class="hover-container">
+                    라 발스
+                    <div class="hidden-text">
+                        목관악기 : 플루트 3, 오보에 2, 잉글리시 호른, 클라리넷 2, 베이스 클라리넷, 바순 2, 콘트라바순 1 <br>
+                    금관악기 : 호른 4, 트럼펫 3, 트롬본 3, 튜바 <br>
+                    타악기: 팀파니, 글로켄슈필, 캐스터네츠, 앤틱 심벌즈, 탬버린, 탐탐, 트라이앵글, 큰북, 작은북, 심벌즈 <br>
+                    현악기: 하프2, 현 5부
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="year">
+                <h2>1928</h2>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="content">
+                <h2>Boléro</h2>
+                <div class="hover-container">
+                    볼레로
+                    <div class="hidden-text">
+                        스페인 춤 음악 형식인 ‘볼레로’를 기반으로 작곡된 작품.
+                        <br>무용가 ‘이다 루빈스타인’의 의뢰로 시작되었으며, 1928.11.22 파리 오페라에서 초연되었을 때
+                        <br>대단한 성공을 거두었다. 곡 전체에 걸쳐 불변하는 스네어 드럼의 오스티나토 리듬 169개 위에
+                        <br> 두 개의 멜로디가 번갈아 반복되는 형태로 구성되어 있다.
+                        <br> 피아니시모로 시작하여 연속적인 크레센도를 통해 포르티시모까지 상승한다. 평균 공연 시간은
+                        <br>약 15분. 인기 드라마 ‘스카이 캐슬’ 등 드라마 ost로 활용되어 더욱 친숙하다. 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="year">
+                <h2>1920</h2>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="content">
+                <h2>La valse</h2>
+                <div class="hover-container">
+                    라 발스
+                    <div class="hidden-text">
+                        목관악기 : 플루트 3, 오보에 2, 잉글리시 호른, 클라리넷 2, 베이스 클라리넷, 바순 2, 콘트라바순 1 <br>
+                    금관악기 : 호른 4, 트럼펫 3, 트롬본 3, 튜바 <br>
+                    타악기: 팀파니, 글로켄슈필, 캐스터네츠, 앤틱 심벌즈, 탬버린, 탐탐, 트라이앵글, 큰북, 작은북, 심벌즈 <br>
+                    현악기: 하프2, 현 5부
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="year">
+                <h2>1920</h2>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="content">
+                <h2>La valse</h2>
+                <div class="hover-container">
+                    라 발스
+                    <div class="hidden-text">
+                        목관악기 : 플루트 3, 오보에 2, 잉글리시 호른, 클라리넷 2, 베이스 클라리넷, 바순 2, 콘트라바순 1 <br>
+                    금관악기 : 호른 4, 트럼펫 3, 트롬본 3, 튜바 <br>
+                    타악기: 팀파니, 글로켄슈필, 캐스터네츠, 앤틱 심벌즈, 탬버린, 탐탐, 트라이앵글, 큰북, 작은북, 심벌즈 <br>
+                    현악기: 하프2, 현 5부
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<!--타임라인 끝-->
+
+<!--레코드샵 시작-->
+<div id="record" style="display: none;">
+    안녕!!!!!
+    <img src="./고양이 앨범.jpeg">
+</div>
+<!--레코드샵 끝-->
+
+<!--악보 도서관 시작-->
+<div id="play" style="display: none;">
+    <div class="test001">
+    안녕!!!!!</div>
+</div>
+<!--악보 도서관 끝-->
+
+</body>
+</html>
